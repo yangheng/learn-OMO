@@ -2,49 +2,56 @@
 
 # learn-OMO: Deep Dive into Oh My OpenCode
 
-> A 12-session source code analysis of **Oh My OpenCode** — the #1 OpenCode plugin that transforms it into a multi-agent coding platform rivaling Claude Code.
+> Follow one task from start to finish — understand every gear in OMO's machinery.
 
-Modeled after [learn-claude-code](https://github.com/shareAI-lab/learn-claude-code).
+## What This Is
 
-## What is Oh My OpenCode?
+This is not API docs or a feature list. It's a **story**: you tell OMO "refactor this module", then follow that task through the entire system — from plugin bootstrap to Ralph Loop completion.
 
-OMO is a **plugin** for [OpenCode](https://github.com/sst/opencode) that adds:
-- 🤖 **8+ specialist agents** (Sisyphus, Oracle, Librarian, Atlas, Momus, Metis, Explore, Prometheus)
-- 🔄 **Ralph Loop** — auto-retry until task completion
-- 🛠️ **Crafted tools** — AST-grep, LSP, interactive bash, delegate-task
-- 🪝 **30+ hooks** — event-driven behavior modification
-- 🔌 **Claude Code compatibility** — agent/MCP/plugin/skill loaders
+Each chapter picks up where the previous one ends. Each chapter follows the code. Each chapter covers one thing.
 
-## Sessions
+## Architecture
 
-| # | Topic | Motto |
-|---|-------|-------|
-| [01](docs/en/s01-plugin-architecture.md) | Plugin Architecture | "It all starts with a Plugin interface" |
-| [02](docs/en/s02-multi-agent-system.md) | Multi-Agent System | "Each agent is named after a god for a reason" |
-| [03](docs/en/s03-sisyphus-discipline-agent.md) | Sisyphus: The Discipline Agent | "Humans roll their boulder every day. So do you." |
-| [04](docs/en/s04-agent-delegation.md) | Agent Delegation | "A Sisyphus that doesn't delegate is just an agent" |
-| [05](docs/en/s05-hook-system.md) | Hook System | "Hooks are OMO's nervous system" |
-| [06](docs/en/s06-background-agents.md) | Background Agents | "tmux is the poor man's container orchestration" |
-| [07](docs/en/s07-crafted-tools.md) | Crafted Tools | "AST search is grep's final form" |
-| [08](docs/en/s08-prompt-engineering.md) | Prompt Engineering | "Prompts aren't written, they're built" |
-| [09](docs/en/s09-claude-code-compat.md) | Claude Code Compatibility | "The best migration is invisible" |
-| [10](docs/en/s10-skill-mcp-management.md) | Skill & MCP Management | "Plugins for plugins, turtles all the way down" |
-| [11](docs/en/s11-error-recovery.md) | Error Recovery & Resilience | "A crash isn't the end, it's a restart" |
-| [12](docs/en/s12-ralph-loop.md) | The Ralph Loop | "Done yet? No? Keep going." |
+![Architecture](./docs/images/architecture.webp)
+
+## Chapters
+
+| # | Chapter | Story Arc |
+|---|---------|-----------|
+| 01 | [Plugin Bootstrap](./docs/en/ch01-plugin-bootstrap.md) | OMO plugin loads into OpenCode, registers hooks/tools/agents |
+| 02 | [Sisyphus Receives Task](./docs/en/ch02-sisyphus-planning.md) | Sisyphus analyzes intent, assesses codebase, makes a plan |
+| 03 | [Delegation System](./docs/en/ch03-delegation.md) | delegate_task dispatches work to Sisyphus-Junior + skills |
+| 04 | [Specialist Agents](./docs/en/ch04-specialist-agents.md) | Oracle thinks, Explore searches, Librarian reads docs |
+| 05 | [Hook Pipeline](./docs/en/ch05-hook-pipeline.md) | think-mode, rules injection, context management — transparent enhancement |
+| 06 | [Error Recovery](./docs/en/ch06-error-recovery.md) | Edit failures, session crashes, context overflow — auto-fix |
+| 07 | [Background Execution](./docs/en/ch07-background-agents.md) | Run multiple agents in parallel, concurrent search & execution |
+| 08 | [Dynamic Prompts](./docs/en/ch08-dynamic-prompts.md) | Each agent's prompt assembled on-the-fly from available resources |
+| 09 | [Crafted Tools](./docs/en/ch09-crafted-tools.md) | AST-grep, LSP, interactive bash — beyond native capabilities |
+| 10 | [CC Compatibility](./docs/en/ch10-cc-compatibility.md) | Claude Code users migrate without changing any config |
+| 11 | [Ralph Loop](./docs/en/ch11-ralph-loop.md) | Auto-retry until task complete — OMO's killer feature |
 
 ## Quick Comparison
 
 | Capability | Bare OpenCode | OpenCode + OMO | Claude Code |
 |-----------|---------------|----------------|-------------|
-| Multi-agent | ❌ | ✅ 8+ agents | ✅ Built-in |
+| Multi-agent | ❌ | ✅ 8+ specialists | ✅ Built-in |
 | Auto-retry loop | ❌ | ✅ Ralph Loop | ❌ |
-| AST-aware search | ❌ | ✅ ast-grep | ❌ |
-| LSP integration | ❌ | ✅ Full LSP | Partial |
-| Plan→Execute pipeline | ❌ | ✅ Prometheus→Atlas | ❌ |
-| Customizability | Medium | Very High | Low |
+| AST-aware search | ❌ | ✅ ast-grep (25 langs) | ❌ |
+| Full LSP tools | ❌ | ✅ definition/refs/rename | Partial |
+| Plan→Review pipeline | ❌ | ✅ Prometheus→Metis→Momus | ❌ |
+| Error auto-recovery | ❌ | ✅ 3 recovery hooks | ❌ |
+| Customizability | Medium | Very High (30+ hooks) | Low |
 
----
+## How to Read
 
-Start reading: [Session 01 — Plugin Architecture](docs/en/s01-plugin-architecture.md)
+**Read front to back** — chapters form a continuous story, each building on the last.
 
-*For educational purposes only. All code references from the Oh My OpenCode open-source repository.*
+**Read alongside the code** — every snippet includes file paths and line numbers.
+
+## Source
+
+Oh My OpenCode: [GitHub](https://github.com/opensoft/oh-my-opencode)
+
+## License
+
+MIT
