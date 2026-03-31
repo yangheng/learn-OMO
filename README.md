@@ -1,3 +1,5 @@
+[English](./README.md) | [中文](./README-zh.md)
+
 # learn-OMO: Deep Dive into Oh My OpenCode
 
 > A 12-session source code analysis of **Oh My OpenCode** — the #1 OpenCode plugin that transforms it into a multi-agent coding platform rivaling Claude Code.
