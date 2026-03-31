@@ -14,6 +14,12 @@
 
 ![Architecture](./docs/images/architecture.webp)
 
+## 两种阅读方式
+
+**🏗️ 我是高级开发者，想快速理解架构** → [架构设计文档](./docs/zh/architecture.md)
+
+**📖 我是新手，想从头学起** → [第一章：插件启动](./docs/zh/ch01-plugin-bootstrap.md)
+
 ## 章节目录
 
 | # | 章节 | 故事线 |

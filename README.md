@@ -14,6 +14,12 @@ Each chapter picks up where the previous one ends. Each chapter follows the code
 
 ![Architecture](./docs/images/architecture.webp)
 
+## Two Reading Paths
+
+**🏗️ Senior developer? Quick architecture overview** → [Architecture Design](./docs/en/architecture.md)
+
+**📖 New to OMO? Start from scratch** → [Chapter 1: Plugin Bootstrap](./docs/en/ch01-plugin-bootstrap.md)
+
 ## Chapters
 
 | # | Chapter | Story Arc |
