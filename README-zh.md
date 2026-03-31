@@ -92,24 +92,24 @@ OMO 最令人惊叹的设计是它的 **多 Agent 协作系统**。每个 Agent 
 
 ## 🖼️ 架构全景信息图
 
-![Oh My OpenCode 架构全景](docs/images/00-architecture-overview.png)
+![Oh My OpenCode 架构全景](docs/images/00-architecture-overview.webp)
 
 ## 📚 12 个深度解析章节
 
 | 章节 | 主题 | 格言 | 信息图 |
 |------|------|------|--------|
-| [s01](docs/zh/s01-plugin-architecture.md) | **插件架构** | "一切始于一个 Plugin 接口" | ![s01](docs/images/s01-plugin-architecture.png) |
-| [s02](docs/zh/s02-multi-agent-system.md) | **多 Agent 系统** | "每个 Agent 都以神命名，因为它们各有神力" | ![s02](docs/images/s02-multi-agent-system.png) |
-| [s03](docs/zh/s03-sisyphus-discipline-agent.md) | **Sisyphus：纪律之神** | "人类每天推石上山，你也一样" | ![s03](docs/images/s03-sisyphus-discipline-agent.png) |
-| [s04](docs/zh/s04-agent-delegation.md) | **Agent 委派机制** | "不委派的 Sisyphus 只是一个普通 Agent" | ![s04](docs/images/s04-agent-delegation.png) |
-| [s05](docs/zh/s05-hook-system.md) | **Hook 系统** | "Hook 是 OMO 的神经系统" | ![s05](docs/images/s05-hook-system.png) |
-| [s06](docs/zh/s06-background-agents.md) | **后台 Agent** | "tmux 是穷人的容器编排" | ![s06](docs/images/s06-background-agents.png) |
-| [s07](docs/zh/s07-crafted-tools.md) | **精心打造的工具集** | "AST 搜索是 grep 的进化形态" | ![s07](docs/images/s07-crafted-tools.png) |
-| [s08](docs/zh/s08-prompt-engineering.md) | **提示工程** | "Prompt 不是写的，是构建的" | ![s08](docs/images/s08-prompt-engineering.png) |
-| [s09](docs/zh/s09-claude-code-compat.md) | **Claude Code 兼容层** | "最好的迁移是无感迁移" | ![s09](docs/images/s09-claude-code-compat.png) |
-| [s10](docs/zh/s10-skill-mcp-management.md) | **Skill 与 MCP 管理** | "插件的插件，无限套娃" | ![s10](docs/images/s10-skill-mcp-management.png) |
-| [s11](docs/zh/s11-error-recovery.md) | **错误恢复与韧性** | "崩溃不是结束，是重启的开始" | ![s11](docs/images/s11-error-recovery.png) |
-| [s12](docs/zh/s12-ralph-loop.md) | **Ralph Loop** | "做完了吗？没有？那继续。" | ![s12](docs/images/s12-ralph-loop.png) |
+| [s01](docs/zh/s01-plugin-architecture.md) | **插件架构** | "一切始于一个 Plugin 接口" | ![s01](docs/images/s01-plugin-architecture.webp) |
+| [s02](docs/zh/s02-multi-agent-system.md) | **多 Agent 系统** | "每个 Agent 都以神命名，因为它们各有神力" | ![s02](docs/images/s02-multi-agent-system.webp) |
+| [s03](docs/zh/s03-sisyphus-discipline-agent.md) | **Sisyphus：纪律之神** | "人类每天推石上山，你也一样" | ![s03](docs/images/s03-sisyphus-discipline-agent.webp) |
+| [s04](docs/zh/s04-agent-delegation.md) | **Agent 委派机制** | "不委派的 Sisyphus 只是一个普通 Agent" | ![s04](docs/images/s04-agent-delegation.webp) |
+| [s05](docs/zh/s05-hook-system.md) | **Hook 系统** | "Hook 是 OMO 的神经系统" | ![s05](docs/images/s05-hook-system.webp) |
+| [s06](docs/zh/s06-background-agents.md) | **后台 Agent** | "tmux 是穷人的容器编排" | ![s06](docs/images/s06-background-agents.webp) |
+| [s07](docs/zh/s07-crafted-tools.md) | **精心打造的工具集** | "AST 搜索是 grep 的进化形态" | ![s07](docs/images/s07-crafted-tools.webp) |
+| [s08](docs/zh/s08-prompt-engineering.md) | **提示工程** | "Prompt 不是写的，是构建的" | ![s08](docs/images/s08-prompt-engineering.webp) |
+| [s09](docs/zh/s09-claude-code-compat.md) | **Claude Code 兼容层** | "最好的迁移是无感迁移" | ![s09](docs/images/s09-claude-code-compat.webp) |
+| [s10](docs/zh/s10-skill-mcp-management.md) | **Skill 与 MCP 管理** | "插件的插件，无限套娃" | ![s10](docs/images/s10-skill-mcp-management.webp) |
+| [s11](docs/zh/s11-error-recovery.md) | **错误恢复与韧性** | "崩溃不是结束，是重启的开始" | ![s11](docs/images/s11-error-recovery.webp) |
+| [s12](docs/zh/s12-ralph-loop.md) | **Ralph Loop** | "做完了吗？没有？那继续。" | ![s12](docs/images/s12-ralph-loop.webp) |
 
 ## 🗺️ 学习路径
 
